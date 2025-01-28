@@ -1,0 +1,567 @@
+*{
+    padding: 0;
+margin: 0;
+border:none;
+outline: none;
+box-sizing: border-box;
+text-decoration: none;
+text-transform: capitalize;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+
+}
+/*------------body start--------*/
+body{
+    color: #000;
+    background: #efefef;
+}
+/*------------body start--------*/
+header{
+    background:url(images/mainpage-bg-desktop-1_upscayl_4x_realesrgan-x4fast.jpg);
+background-size: cover;
+background-position: center;
+width: 100%;
+height: 120vh;
+background-repeat: no-repeat;
+padding-top: 60px;
+}
+.mainbar{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    background: rgb(207, 76, 76);
+    width: 100%;
+   height: 60px;
+}
+.mainbar h2{
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+  margin-top: 20px;
+}
+.mainbar a{
+    color: #000;
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0px auto;
+    padding: 10px;
+}
+.logo a{
+    text-decoration: none;
+}
+header nav .logo img{
+height: 70px;
+width: 70px;
+}
+header nav .logo span{
+    color: rgb(207, 76, 76);
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+nav ul li{
+    display: inline;
+    list-style:none;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav ul li a:hover{
+    color: #fff;
+}
+.hero-text{
+    padding-left: 100px;
+    padding-top: 200px;
+}
+.hero-text h1{
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+.hero-text{
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1.7em;
+}
+.hero-button a{
+    width: 150px;
+    background: rgb(207, 76, 76);
+    padding: 7px 20px;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+ .btn2{
+    width: 200px;
+    background: none;
+    margin-left: 30px;
+    padding: 7px 20px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: 0.5s;
+}
+/*------------header end--------*/
+/*---------top to bottom scrollbar------------*/
+.to-top{
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    background:rgb(207, 76, 76);
+    bottom:20px;
+    right:32px;
+    border-radius: 10px;
+    z-index: 1000;
+    font-size: 25px;
+    color:#fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    }
+    .to-top:hover{
+        color: #fff;
+    }
+    .to-top-active{
+        opacity: 1;
+    pointer-events: auto;
+    }
+
+/*---------start manufacturing------------*/
+.menufac-text{
+    padding: 10px 10px;
+    background: #fff;
+    box-shadow: 0 0 10px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    padding-top: 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+.menufac h2{
+    font-size: 35px;
+    color: #000;
+    font-weight: bold;
+}
+.menufac-text img{
+    width: 150px;
+    height: 150px;
+    text-align: center;
+}
+.menufac-text h3{
+    color: black;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.menufac-text p{
+    line-height: 1.6em;
+    color: #626262;
+    font-size: 16px;
+    text-align: justify;
+    padding-top: 10px;
+    font-weight: 400;
+}
+/*---------start machine parce------*/
+.machine{
+    width: 100%;
+    height: 200px;
+    background: rgb(4, 4, 83);
+    margin-top: 100px;
+}
+.machine-parce{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: 150px auto;
+    padding-top: 75px;
+}
+.machine-text h3::after{
+    position: absolute;
+    content: '';
+    height: 100px;
+    width: 5px;
+    background: rgb(207, 76, 76);
+    top: -20px;
+    left: -50px;
+    border-radius: 20px;
+}
+.machine-parce h3{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+}
+.machine-parce span{
+    font-size: 1rem;
+    padding-top: 20px;
+}
+/*---------services------*/
+.services h2{
+    font-size: 35px;
+    color: #000;
+    font-weight: 700;
+    padding-bottom: 50px;
+}
+.services-img img{
+width: 100%;
+border-radius: 5px;
+}
+.services-text h3{
+    font-size: 1.5rem;
+    padding-top: 20px;
+    color: #000;
+    font-weight: 500;
+}
+.services-text p{
+    color: #626262;
+    font-size: 16px;
+    line-height: 1.7em;
+    align-items: justify;
+    padding-top: 20px;
+    font-weight: 400;
+}
+.services-btn{
+    color:black;
+    font-size: 1.2rem;
+}
+.services-btn i{
+    font-size: 1rem;
+    color: rgb(207, 76, 76);
+margin-left: 20px
+
+}
+/*---------matrials------*/
+.matrials h2{
+    font-size: 35px;
+    color: #000;
+    font-weight: 700;
+    padding-bottom: 50px;
+}
+.matrials-img img{
+width: 100%;
+border-radius: 5px;
+}
+.matrials-text h3{
+    font-size: 1.5rem;
+    padding-top: 20px;
+    color: #000;
+    font-weight: 500;
+}
+.matrials-text p{
+    color: #626262;
+    font-size: 16px;
+    line-height: 1.7em;
+    align-items: justify;
+    font-weight: 400;
+    padding-top: 20px;
+}
+.matrials-btn{
+    color:black;
+    font-size: 16px;
+    font-weight: 700;
+}
+.matrials-btn i{
+    font-size: 1rem;
+    color: rgb(207, 76, 76);
+margin-left: 20px;
+padding-top: 20px;
+}
+/*----------start business world---------*/
+#business{
+    background: gainsboro;
+  padding-top: 50px;
+  padding-bottom: 50px;
+    margin-top: 100px;
+
+}
+.business h2{
+font-size: 30px;
+font-weight: 700;
+color: #000;
+text-align: center;
+padding-top: 50px;
+padding-bottom: 50px;
+}
+.business-img{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin:0px auto;
+}
+.business-img i{
+  font-size: 80px;
+  color: #626262;
+}
+/*----------footer start---------*/
+/*----------footer start---------*/
+#footer{
+    background: rgb(22, 22, 70);
+    padding: 20px auto;
+}
+.footer-link{
+padding-top: 50px;
+padding-bottom: 30px;
+}
+.footer-link h3{
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.footer-link p{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 20px;
+}
+.footer-link .footer-btn{
+    background: rgb(207, 76, 76);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+.footer-link ul li{
+    list-style: none;
+    display: block;
+    padding-top: 20px;
+}
+.footer-link ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7em;
+    transition: 0.5s all;
+}
+.footer-link ul li a:hover{
+    color: rgb(207, 76, 76);
+}
+.line{
+    width: 100%;
+margin: 20px auto;
+    height: 2px;
+    background: rgb(207, 76, 76);
+}
+.footer-down ul li{
+    list-style: none;
+    display: inline;
+}
+.footer-down ul li a{
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+.footer-privacy{
+background: none;
+outline: none;
+color: #efefef;
+font-size: 16px;
+}
+/*----------start privacy---------*/
+.privacy{
+    position:fixed;
+width: 100%;
+background: #fff;
+box-shadow: 0 0 10px 10px rgba(0,0,0,0.1);
+z-index: 100;
+top: 20px;
+left: 0px;
+right: 0px;
+bottom: 0px;
+padding: 50px 50px;
+visibility: hidden;
+overflow: hidden;
+overflow-y: scroll;
+}
+.privacy-active{
+    visibility: visible;
+}
+
+.close{
+    position: fixed;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    color: rgb(207, 76, 76);
+    top: 80px;
+    right: 50px;
+    background: none;
+    outline: none;
+}
+.close i{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.privacy-text h2{
+font-size: 2rem;
+color: #000;
+font-weight: 700;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+.privacy-text h3{
+font-size: 1rem;
+color: #000;
+font-weight: 600;
+}
+.privacy-text p{
+    text-align: justify;
+    font-size: 14px;
+    color: #626262;
+    line-height: 1.7em;
+}
+.privacy ul li{
+    color: #626262;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.8em;
+}
+
+
+.social-media ul li{
+    list-style:none;
+    display: inline;
+}
+.social-media ul li a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+}
+.social-media ul li a i{
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: 0.5s all;
+}
+.social-media ul li a:hover{
+    color: rgb(207, 76, 76);
+}
+
+
+/*----------this is for menubar---------*/
+.menu{
+    border: 2px solid rgb(207, 76, 76);
+    border-radius: 5px;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.7rem;
+z-index: 1000;
+cursor: pointer;
+display: none;
+}
+
+/*----------this is for mobile screen---------*/
+@media only screen and (max-width: 771px){
+    header nav .logo img{
+        height: 70px;
+        width: 70px;
+        }
+        header nav .logo span{
+            font-size: 16px;
+        }
+    .menu{
+        display: block;
+        font-size: 30px;
+        color: #000;
+    }
+    .menu i{
+        color:rgb(207, 76, 76);
+        z-index: 100;
+        font-size: 1.5rem;
+    }
+    #listmenu{
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        top: 60px;
+        right: 0;
+        background: #fff;
+        box-shadow: 0 0 10px 10px rgba(0,0,0,0.1);
+        overflow: hidden;
+        max-height: 0;
+        transition: 0.5s;
+    }
+#listmenu li{
+    display: block;
+}
+#listmenu li a{
+    color: #000;
+    line-height: 3em;
+    color: #626262;
+    font-size: 1rem;
+}
+/*----------hero section start---------*/
+.hero-text{
+    margin-left: -50px;
+    margin-top: -70px;
+}
+.hero-text h1{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+.hero-text p{
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1.7em;
+}
+.hero-button{
+    display: flex;
+    align-items: center;
+}
+.hero-button .btn1{
+    width: 140px;
+}
+.hero-button .btn2{
+    width: 170px;
+    margin-left: 10px;
+}
+.hero-button .btn2:hover{
+    background: rgb(207, 76, 76);
+}
+/*---------machine parce---------*/
+.machine{
+    height: 500px;
+}
+.machine-parce{
+    display: block;
+}
+.machine-parce h3{
+    line-height: 1.5em;
+}
+.mainbar h2{
+    font-size: 13px;
+}
+.business-img{
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+.business-img i{
+    font-size: 50px;
+    color: #626262;
+    text-align: center;
+    line-height: 2em;
+  }
+
+
+}
